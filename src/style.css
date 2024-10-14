@@ -67,7 +67,7 @@ body, html {
   outline: 0;
   background: none;
   width: 100%; /* Ensure it fills the search bar */
-  caret-color: red;
+  caret-color: rgb(69, 226, 103);
   font-size: 14px;
   padding: 0 10px;
 }
@@ -82,7 +82,7 @@ body, html {
   color: white;
   text-decoration: none;
   background-color: white;
-  color: #e74c3c;
+  color: #3ce761;
 }
 
 /* Media Queries for Responsiveness */
