@@ -1,36 +1,156 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Enter your description here"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./src/style.css">
-  <title>Sound Group</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="brand sticky-top"><img src="./src/logo.png" alt="">Sound Group</li>
-        <li>Home</li>
-        <li>About</li>
-        <li>
-          <div class="container h-100">
-            <div class="d-flex justify-content-center h-100">
-              <div class="searchbar">
-                <input class="search_input" type="text" name="" placeholder="Search for Songs...">
-                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    
-    <script src="./src/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./src/style.css">
+<title>Sound Group</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./src/logo.png" alt="" height="44px">
+    </div>
+    <div class="menu">
+     <i class="fas fa-home">
+     </i>
+     <i class="fas fa-search">
+     </i>
+     <i class="fas fa-book">
+     </i>
+    </div>
+    <div class="add">
+     <i class="fas fa-plus">
+     </i>
+    </div>
+   </div>
+   <div class="main-content">
+    <div class="header">
+     <div class="search-bar">
+      <i class="fas fa-search">
+      </i>
+      <input placeholder="What do you want to play?" type="text"/>
+     </div>
+     <div class="buttons">
+      <button>
+       Explore Premium
+      </button>
+      <button>
+       About Us
+      </button>
+      <div class="profile">
+       <div class="profile-pic">
+      <img src="./src/logo.png" alt="" height="44px">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="section">
+     <h2>
+      To get you started
+     </h2>
+     <div class="card">
+      <img alt="Album cover of Open Letter by Talha Anjum" height="200" src="./src/open letter.jpg" width="200"/>
+      <div class="title">
+       Talha Anjum Mix
+      </div>
+      <div class="description">
+       Faisal Kapadia, aleemrk and Talhah Yunus
+      </div>
+     </div>
+     <div class="card">
+      <img alt="Album cover of Atif Aslam Mix" height="200" src="https://storage.googleapis.com/a1aa/image/axl5Z8kz9xrQFd6JrdmYfEEVGCA9fA74iMOHu9ZwCiIpGeNnA.jpg" width="200"/>
+      <div class="title">
+       Atif Aslam Mix
+      </div>
+      <div class="description">
+       Sachin-Jigar, Pritam and KK
+      </div>
+     </div>
+     <div class="card">
+      <img alt="Album cover of Atif Aslam Mix" height="200" src="https://storage.googleapis.com/a1aa/image/axl5Z8kz9xrQFd6JrdmYfEEVGCA9fA74iMOHu9ZwCiIpGeNnA.jpg" width="200"/>
+      <div class="title">
+       Atif Aslam Mix
+      </div>
+      <div class="description">
+       Sachin-Jigar, Pritam and KK
+      </div>
+     </div>
+    </div>
+    <div class="section">
+     <h2>
+      Recently played
+     </h2>
+     <div class="card">
+      <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/kaun talha.png" width="200"/>
+      <div class="title">
+       Kaun Talha
+      </div>
+      <div class="description">
+       Talha Anjum, Umair
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="player">
+    <div class="info">
+     <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="50" src="./src/kaun talha.png" width="50"/>
+     <div class="details">
+      <div class="song">
+       Kaun Talha
+      </div>
+      <div class="artist">
+       Talha Anjum, Umair
+      </div>
+     </div>
+    </div>
+    <div class="controls">
+     <i class="fas fa-random">
+     </i>
+     <i class="fas fa-step-backward">
+     </i>
+     <i class="fas fa-play-circle">
+     </i>
+     <i class="fas fa-step-forward">
+     </i>
+     <i class="fas fa-redo">
+     </i>
+    </div>
+    <div class="progress">
+     <div class="time">
+      0:16
+     </div>
+     <div class="bar">
+      <div class="filled">
+      </div>
+     </div>
+     <div class="time">
+      4:29
+     </div>
+    </div>
+   </div>
+   <!-- <div class="right-sidebar">
+    <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" class="album-cover" height="300" src="https://storage.googleapis.com/a1aa/image/XAtrFqem6CR1cq2eQuCwg7AEtDAfkin4U8X1sSw9Bb9QN8NnA.jpg" width="300"/>
+    <div class="album-info">
+     <div class="title">
+      Kaun Talha
+     </div>
+     <div class="artist">
+      Talha Anjum, Umair
+     </div>
+    </div>
+    <div class="about">
+     <h3>
+      About the artist
+     </h3>
+     <img alt="Image of the artist Talha Anjum" height="200" src="https://storage.googleapis.com/a1aa/image/okpTpKDgaK7MMFqcbjTne5vc40ikOkJb2DPfX9EOkxnrGeNnA.jpg" width="300"/>
+    </div>
+   </div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

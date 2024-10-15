@@ -1,175 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
+  background-color: antiquewhite;
+}
+
+* {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #121212;
-  color: #FFFFFF;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container {
-  display: flex;
+
+nav {
+  font-family: 'Poppins';
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 0 3px 0 3px;
 }
-.sidebar {
-  width: 250px;
-  background-color: #000000;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-.sidebar h2 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.sidebar button {
-  background-color: #1DB954;
-  color: #FFFFFF;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.sidebar button:hover {
-  background-color: #1ed760;
-}
-.sidebar .section {
-  margin-bottom: 20px;
-}
-.sidebar .section h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.sidebar .section p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.sidebar .footer {
-  font-size: 12px;
-}
-.sidebar .footer a {
-  color: #B3B3B3;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
-}
-.sidebar .footer a:hover {
-  text-decoration: underline;
-}
-.sidebar .footer .language {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.sidebar .footer .language button {
-  background-color: transparent;
-  border: 1px solid #B3B3B3;
-  color: #B3B3B3;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 12px;
-}
-.main-content {
-  flex: 1;
-  padding: 20px;
-}
-.header {
+
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  list-style: none;
+  height: 90px;
+  background-color: black;
+  color: #ffff;
 }
-.header .search-bar {
+
+.brand img {
+  height: 80px;
+  padding: 0 8px;
+}
+
+.brand {
   display: flex;
   align-items: center;
-  background-color: #333333;
-  padding: 5px 10px;
-  border-radius: 25px;
-  width: 300px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-.header .search-bar input {
-  background-color: transparent;
-  border: none;
-  color: #FFFFFF;
-  outline: none;
+
+nav ul li {
+  padding: 0 12px;
+}
+
+/* Static Search Bar Styling */
+body, html {
+  height: 100%;
   width: 100%;
-  margin-left: 10px;
+  margin: 0;
+  padding: 0;
 }
-.header .search-bar i {
-  color: #B3B3B3;
-}
-.header .auth-buttons {
+
+.searchbar {
+  height: 40px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
+  width: 300px; /* Static width for search bar */
 }
-.header .auth-buttons a {
-  color: #FFFFFF;
-  text-decoration: none;
-  margin-right: 20px;
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 100%; /* Ensure it fills the search bar */
+  caret-color: rgb(69, 226, 103);
   font-size: 14px;
+  padding: 0 10px;
 }
-.header .auth-buttons button {
-  background-color: #FFFFFF;
-  color: #000000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.header .auth-buttons button:hover {
-  background-color: #f1f1f1;
-}
-.section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.artists, .albums {
+
+.search_icon {
+  height: 40px;
+  width: 40px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
-.artists .artist, .albums .album {
-  text-align: center;
-  margin-right: 20px;
-}
-.artists .artist img, .albums .album img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #3ce761;
 }
-.artists .artist p, .albums .album p {
-  margin-top: 10px;
-  font-size: 14px;
+
+@media (max-width: 768px) {
+  .searchbar {
+    width: 200px; 
+  }
+
+  .search_input {
+    font-size: 12px; 
+  }
 }
-.artists .artist p.artist-name, .albums .album p.album-name {
-  font-weight: 500;
+
+@media (max-width: 425px) {
+  .brand img {
+    height: 40px;
+    padding: 0 1px;
+  }
+
+  nav ul li {
+    padding: 0 7px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+  nav ul li {
+    font-size: 7px;
+
+  }
+
+  .searchbar {
+    width: 120px; 
+    font-size: 0.2rem;
+    height: 30px;
+  }
+
+  .search_input {
+    font-size: 8px;
+  }
+
+  .search_icon {
+    height: 18px;
+    width: 20px;
+  }
+
+nav ul
+{
+  height: 60px;
 }
-.artists .artist p.artist-role, .albums .album p.album-role {
-  color: #B3B3B3;
-}
-.footer-banner {
-  background-color: #9147FF;
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-banner button {
-  background-color: #FFFFFF;
-  color: #000000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.footer-banner button:hover {
-  background-color: #f1f1f1;
 }

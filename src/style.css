@@ -1,132 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 body {
-  background-color: antiquewhite;
-}
-
-* {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
 }
-
-nav {
-  font-family: 'Poppins';
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  margin: 0 3px 0 3px;
-}
-
-nav ul {
+.sidebar {
+  width: 60px; /* Reduced width for icons only */
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center; /* Center icons */
+  padding: 20px 0;
+}
+.sidebar .logo {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.sidebar .menu {
+  flex-grow: 1;
+}
+.sidebar .menu i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.sidebar .menu i:hover {
+  color: #1db954;
+}
+.sidebar .add {
+  font-size: 24px;
+  margin-top: auto;
+}
+.main-content {
+  margin-left: 60px; /* Adjusted margin to match sidebar width */
+  padding: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  height: 90px;
-  background-color: black;
-  color: #ffff;
+  margin-bottom: 20px;
 }
-
-.brand img {
-  height: 80px;
-  padding: 0 8px;
-}
-
-.brand {
+.header .search-bar {
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+}
+.header .search-bar input {
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+  margin-left: 10px;
+}
+.header .profile {
+  display: flex;
+  align-items: center;
+}
+.header .profile .profile-pic {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.header .buttons {
+  display: flex;
+  align-items: center;
+}
+.header .buttons button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header .buttons button:hover {
+  color: #1db954;
+}
+.section {
+  margin-bottom: 40px;
+}
+.section h2 {
+  margin-bottom: 20px;
+}
+.card {
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card .title {
+  margin-top: 10px;
+  font-size: 16px;
   font-weight: bold;
 }
-
-nav ul li {
-  padding: 0 12px;
-}
-
-/* Static Search Bar Styling */
-body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.searchbar {
-  height: 40px;
-  background-color: #353b48;
-  border-radius: 30px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  transition: all 0.4s ease;
-  width: 300px; /* Static width for search bar */
-}
-
-.search_input {
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  width: 100%; /* Ensure it fills the search bar */
-  caret-color: rgb(69, 226, 103);
+.card .description {
+  margin-top: 5px;
   font-size: 14px;
-  padding: 0 10px;
+  color: #b3b3b3;
 }
-
-.search_icon {
-  height: 40px;
-  width: 40px;
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  color: white;
-  text-decoration: none;
-  background-color: white;
-  color: #3ce761;
+  justify-content: space-between;
 }
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .searchbar {
-    width: 200px; /* Adjust width on smaller screens */
-  }
-
-  .search_input {
-    font-size: 12px; /* Smaller font size for smaller screens */
-  }
+.player .info {
+  display: flex;
+  align-items: center;
 }
-
-@media (max-width: 425px) {
-  .brand img {
-    height: 40px;
-    padding: 0 1px;
-  }
-
-  nav ul li {
-    padding: 0 7px;
-  }
-
-  .brand {
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-
-  nav ul li {
-    font-size: 10px;
-  }
-
-  .searchbar {
-    width: 150px; /* Further adjust width on mobile screens */
-  }
-
-  .search_input {
-    font-size: 12px;
-  }
-
-  .search_icon {
-    height: 35px;
-    width: 35px;
-  }
+.player .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.player .info .details {
+  display: flex;
+  flex-direction: column;
+}
+.player .info .details .song {
+  font-size: 14px;
+  font-weight: bold;
+}
+.player .info .details .artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.player .controls {
+  display: flex;
+  align-items: center;
+}
+.player .controls i {
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.player .controls i:hover {
+  color: #1db954;
+}
+.player .progress {
+  display: flex;
+  align-items: center;
+}
+.player .progress .time {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 0 10px;
+}
+.player .progress .bar {
+  width: 300px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  position: relative;
+}
+.player .progress .bar .filled {
+  width: 20%;
+  height: 100%;
+  background-color: #1db954;
+  border-radius: 2px;
+}
+.right-sidebar {
+  width: 240px; /* Reduced width */
+  height: 100vh;
+  background-color: #181818;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.right-sidebar .album-cover {
+  width: 100%;
+  border-radius: 8px;
+}
+.right-sidebar .album-info {
+  margin-top: 20px;
+}
+.right-sidebar .album-info .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.right-sidebar .album-info .artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.right-sidebar .about {
+  margin-top: 20px;
+}
+.right-sidebar .about img {
+  width: 100%;
+  border-radius: 8px;
 }
