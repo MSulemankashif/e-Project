@@ -216,3 +216,36 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+@media(max-width:768px)
+{
+  .card {
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 20px;
+    width: 160px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    height: 340px;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 60%;
+  }
+  h1{
+    font-size: 18px;
+  }
+  h2
+  {
+    font-size: 17px;
+  }
+  button{
+    font-size: 14px;
+  }
+  .description
+  {
+    font-size: 10px;
+  }
+}
