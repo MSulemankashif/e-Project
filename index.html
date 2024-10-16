@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,13 @@
     <div class="logo">
       <img src="./src/logo.png" alt="logo" height="44px">
     </div>
-    <div class="menu"> <!--Menu Start-->
-    <a href="./index.html"> <i class="fas fa-home" title="Home"></i></a>
-     <i class="fas fa-search" title="Search for songs"></i>
-     <i class="fas fa-book" title="Albums" ></i>
+    <div class="menu" id="top"> <!--Menu Start-->
+        <a href="#" id="homeIcon"><i class="fas fa-home" title="Home"></i></a>
+        <i class="fas fa-search" title="Search for songs"></i>
+        <i class="fas fa-book" title="Albums" ></i>
     </div>  <!--Menu End-->
     <div class="add">
-     <i class="fas fa-plus">
-     </i>
+        <i class="fas fa-plus"></i>
     </div>
    </div>
   <!-- Side bar End -->
@@ -32,9 +31,8 @@
    <div class="main-content">
     <div class="header">
      <div class="search-bar">
-      <i class="fas fa-search">
-      </i>
-      <input placeholder="What do you want to play?" type="text"/>
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="What do you want to play?"/>
      </div>
      <div class="buttons">
       <button>Explore Premium</button>
