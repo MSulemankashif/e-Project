@@ -30,6 +30,7 @@ body {
   display: block;
   margin-bottom: 20px;
   font-size: 24px;
+  color: white;
 }
 .sidebar .menu i:hover {
   color: #1db954;
@@ -103,7 +104,9 @@ body {
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
+  height: 340px;
 }
+
 .card img {
   width: 100%;
   border-radius: 8px;
@@ -248,4 +251,64 @@ body {
   {
     font-size: 10px;
   }
+.container-fluid
+{
+  /* width: 80% !important; */
+  margin-left: 32px;
+  margin-right: 0px;
+}
+.container-fluid p{
+  font-size: 11px;
+}
+.container-fluid h6{
+  font-size: 11px;
+}
+.span
+{
+  font-size: 13px;
+}
+};
+/* Media Query End */
+.container-fluid
+{
+  margin-left: 32px;
+  margin-right: -0px;
+}
+.suleman
+{
+  margin-left: 32px;
+  margin-right: 0px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+footer a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+footer a:hover::after {
+  width: 100%;
+  background: #7c4dff; 
+}
+footer a:hover {
+  color: #7c4dff;
+}
+.container-fluid
+{
+  width: 95%;  
+}
+a
+{
+text-decoration: none;
 }
