@@ -5,7 +5,7 @@ body {
   color: white;
 }
 .sidebar {
-  width: 60px; /* Reduced width for icons only */
+  width: 60px; 
   height: 100vh;
   background-color: #000;
   position: fixed;
@@ -13,7 +13,7 @@ body {
   left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center icons */
+  align-items: center;
   padding: 20px 0;
 }
 .sidebar .logo {
@@ -40,7 +40,7 @@ body {
   margin-top: auto;
 }
 .main-content {
-  margin-left: 60px; /* Adjusted margin to match sidebar width */
+  margin-left: 60px; 
   padding: 20px;
 }
 .header {
@@ -190,7 +190,7 @@ body {
   border-radius: 2px;
 }
 .right-sidebar {
-  width: 240px; /* Reduced width */
+  width: 240px; 
   height: 100vh;
   background-color: #181818;
   position: fixed;
@@ -336,12 +336,12 @@ html {
   right: 10px;
   transition: 1s;
   display: flex; 
-  transform: translate(-50%, -50%) scale(0); /* Start with a scale of 0 (hidden) */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for transform and opacity */
-  opacity: 0; /* Initially hidden */
+  transform: translate(-50%, -50%) scale(0); 
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
   }
   .card:hover .play {
     display: block; 
-    transform: translate(-50%, -50%) scale(1); /* Scale up on hover */
-    opacity: 1; /* Fade in on hover */
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
