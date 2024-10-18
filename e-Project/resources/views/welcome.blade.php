@@ -9,9 +9,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Laravel</title>
+<style>
+    a
+    {
+        text-decoration: none
+    }
+</style>
 </head>
 <body>
     <h1>Hello World from Welcome</h1>
+    <a href="/about">About Us</a> <br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
