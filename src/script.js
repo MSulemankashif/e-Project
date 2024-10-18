@@ -5,3 +5,9 @@
 //         behavior: "smooth" // This enables smooth scrolling
 //     });
 // });
+const searchIcon = document.querySelector('.fas.fa-search');
+const searchBar = document.querySelector('.search-bar input');
+
+searchIcon.addEventListener('click', () => {
+  searchBar.focus();
+});

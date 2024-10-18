@@ -105,6 +105,7 @@ body {
   display: inline-block;
   vertical-align: top;
   height: 340px;
+  margin-top: 15px;
 }
 
 .card img {
@@ -315,3 +316,32 @@ text-decoration: none;
 html {
   scroll-behavior: smooth;
 }
+.card{
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #302f2f;
+}
+.play{
+   background-color: rgb(33, 194, 33);
+   display: inline-block;
+   padding: 5px;
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   /* border: 2px solid black; */
+   display: flex;
+   position: absolute;
+  top: 191px;
+  right: 10px;
+  transition: 1s;
+  display: flex; 
+  transform: translate(-50%, -50%) scale(0); /* Start with a scale of 0 (hidden) */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for transform and opacity */
+  opacity: 0; /* Initially hidden */
+  }
+  .card:hover .play {
+    display: block; 
+    transform: translate(-50%, -50%) scale(1); /* Scale up on hover */
+    opacity: 1; /* Fade in on hover */
+  }
