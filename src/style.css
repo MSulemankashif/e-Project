@@ -326,7 +326,7 @@ footer a::after {
   height: 2px;
   width: 0;
   background: transparent;
-  transition: width 0.3s ease, background-color 0.3s ease;
+  transition: width 0.3s ease, 0.3s ease;
 }
 
 footer a:hover::after {
@@ -402,20 +402,11 @@ html {
   border: 0;
   background-color: rgb(19, 206, 35);
   color: black;
+  border-radius: 17px;
  }
  .login-btn:hover{
   border-radius: 17px;
  }
-
- /* .artist img{
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
- }
- .artist h2, p {
-  text-align: center;
-} */
-
 
 .card-1 {
   background-color:#121212;
@@ -428,7 +419,6 @@ html {
   vertical-align: top;
   margin-top: 15px;
 }
-
 .card-1 img {
   width: 100%;
   height: 162px;
@@ -438,7 +428,6 @@ html {
   background-color:#424141;
 
 }
-
 .card-1 .title {
   margin-top: 10px;
   font-size: 16px;
@@ -450,3 +439,19 @@ html {
   font-size: 14px;
   color: #b3b3b3;
 }
+.card-1:hover{
+  cursor: pointer;
+}
+.playbar
+{
+  height: 50px;
+  width: 92%;
+  background-color: #1db954;
+  margin-left: 60px;
+  margin-bottom: 5px;
+  display: grid;
+  justify-content: center;
+}
+.playbar img{
+  margin-top: 10px;
+};
