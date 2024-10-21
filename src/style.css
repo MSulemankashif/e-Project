@@ -390,6 +390,8 @@ html {
   background-color: white;
   color: black;
   border-radius: 20px;
+  transition: 1s;
+
  }
  .signup-btn{
   color: white;
@@ -405,7 +407,8 @@ html {
   border-radius: 17px;
  }
  .login-btn:hover{
-  border-radius: 17px;
+  border-radius: 7px;
+  transition: 1s;
  }
 
 .card-1 {
@@ -444,13 +447,15 @@ html {
 }
 .playbar
 {
-  height: 50px;
-  width: 92%;
-  background-color: #1db954;
+  height: 70px;
+  width: 95%;
+  background-color: #3b3b3b;
   margin-left: 60px;
   margin-bottom: 5px;
-  display: grid;
+  display: flex;
   justify-content: center;
+  border-radius: 10px;
+  color: white;
 }
 .playbar img{
   margin-top: 10px;
