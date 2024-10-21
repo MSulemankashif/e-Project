@@ -100,17 +100,18 @@ body {
   background-color: #181818;
   border-radius: 8px;
   padding: 20px;
-  width: 200px;
+  width: 220px;
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
-  height: 340px;
+  height: 320px;
   margin-top: 15px;
 }
 
 .card img {
   width: 100%;
   border-radius: 8px;
+  height: 200px;
 }
 .card .title {
   margin-top: 10px;
