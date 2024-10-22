@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #191414;
+  padding: 20px;
+}
+
+.library h2 {
+  margin-bottom: 20px;
+}
+
+.create-playlist,
+.find-podcast {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #1db954;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  border: none;
+  color: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.artists, .albums {
+  display: flex;
+  gap: 20px;
+}
+
+.artist-card, .album-card {
+  text-align: center;
+  flex: 1;
+}
+
+.artist-card img, .album-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.artist-card p {
+  margin-top: 10px;
+}
+
+.album-card img {
+  border-radius: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="library">
+        <h2>Your Library</h2>
+        <button class="create-playlist">Create playlist</button>
+        <button class="find-podcast">Find podcasts</button>
+      </div>
+      <div class="footer">
+        <ul>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="What do you want to play?">
+      </div>
+
+      <!-- Popular Artists -->
+      <div class="section">
+        <h2>Popular Artists</h2>
+        <div class="artists">
+          <div class="artist-card">
+            <img src="./Artists/Pritam.jpg" alt="Pritam">
+            <p>Pritam</p>
+          </div>
+          <div class="artist-card">
+            <img src="./Artists/atif aslam.jpg" alt="Atif Aslam">
+            <p>Atif Aslam</p>
+          </div>
+          <div class="artist-card">
+            <img src="./Artists/Arjit Singh.jpg" alt="Arijit Singh">
+            <p>Arijit Singh</p>
+          </div>
+          <div class="artist-card">
+            <img src="./Artists/Diljit Dosanjh.jpg" alt="Diljit Dosanjh">
+            <p>Diljit Dosanjh</p>
+          </div>
+          <div class="artist-card">
+            <img src="./Artists/Anuv jain.jpg" alt="Anuv Jain">
+            <p>Anuv Jain</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Albums -->
+      <div class="section">
+        <h2>Popular Albums</h2>
+        <div class="albums">
+          <div class="album-card">
+            <img src="album1.jpg" alt="Album 1">
+          </div>
+          <div class="album-card">
+            <img src="album2.jpg" alt="Album 2">
+          </div>
+          <div class="album-card">
+            <img src="album3.jpg" alt="Album 3">
+          </div>
+          <div class="album-card">
+            <img src="album4.jpg" alt="Album 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
