@@ -1,17 +1,17 @@
-document.getElementById("homeIcon").addEventListener("click", function(e) {
-    e.preventDefault(); 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}); // For scroll
+// document.getElementById("homeIcon").addEventListener("click", function(e) {
+//     e.preventDefault(); 
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
+// }); // For scroll
 
-const searchIcon = document.querySelector('.fas.fa-search');
-const searchBar = document.querySelector('.search-bar input');
+// const searchIcon = document.querySelector('.fas.fa-search');
+// const searchBar = document.querySelector('.search-bar input');
 
-searchIcon.addEventListener('click', () => {
-  searchBar.focus();
-});
+// searchIcon.addEventListener('click', () => {
+//   searchBar.focus();
+// });
 
 async function getSongs(){
   let a = await fetch("http://127.0.0.1:5500/src/songs/")
@@ -38,3 +38,18 @@ async function main (){
 //   audio.play(); 
 }
 main()
+
+document.getElementById("show-more-btn").addEventListener("click",function(e){
+  const secondRow = document.querySelector(".second-row");
+  const showMoreBtn = document.getElementById("show-more-btn");
+
+  if (secondRow.style.display ==="none"){
+    secondRow.style.display = "flex";
+    secondRow.style.transition="1s"
+    showMoreBtn.innerText = "Show Less";
+  } else{
+    secondRow.style.display = "none";
+    showMoreBtn.innerText = "Show More";
+  }
+});
+e();

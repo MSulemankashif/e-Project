@@ -281,6 +281,7 @@ html {
     display: block; 
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+    cursor: pointer;
   }
  .button-container{
   display: flex;
@@ -333,10 +334,9 @@ html {
   height: 162px;
   border-radius: 50%;
 }
-.card-1:hover{
-  background-color:#424141;
-
-}
+ .card-1:hover{
+    background-color:#424141;
+} 
 .card-1 .title {
   margin-top: 10px;
   font-size: 16px;
@@ -348,9 +348,7 @@ html {
   font-size: 14px;
   color: #b3b3b3;
 }
-.card-1:hover{
-  cursor: pointer;
-}
+
 .playbar
 {
   height: 70px;
@@ -381,4 +379,8 @@ html {
 }
 .artist-h1{
   margin: 20px;
+}
+.second-row{
+  display: none;
+  transition: 2s;
 }
