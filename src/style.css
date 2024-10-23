@@ -7,18 +7,8 @@ body {
 .main-content {
   margin-left: 60px; 
   padding: 20px;
-  width: 75%;
+  width: 100%;
   float: right;
-}
-.sidebar {
-  width: 25%; 
-  height: 100vh;
-  background-color: #000;
-  position: fixed;
-  display: flex;
-  /* align-items: center; */
-  /* padding: 20px 0; */
-  /* margin: 10px; */
 }
 .header {
   display: flex;
@@ -26,29 +16,6 @@ body {
   justify-content: space-between;
   margin: 20px;
   display: flex;
-}
-.sidebar .logo {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.sidebar .menu {
-  flex-grow: 1;
-}
-.sidebar .menu i {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: white;
-}
-.sidebar .menu i:hover {
-  color: #1db954;
-}
-.sidebar .add {
-  font-size: 24px;
-  margin-top: auto;
 }
 .header .search-bar {
   display: flex;
@@ -93,7 +60,10 @@ body {
 }
 .section {
   margin-bottom: 40px;
-  
+  margin-left: 60px; 
+  padding: 20px;
+  width: 100%;
+  float: right;
 }
 .section h2 {
   margin-bottom: 20px;
@@ -101,127 +71,38 @@ body {
 .card {
   background-color: #181818;
   border-radius: 8px;
-  padding: 20px;
-  width: 220px;
+  padding: 10px;
+  height: 270px;
+  width: 200px;
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
-  height: 320px;
   margin-top: 15px;
+  margin: 20px;
 }
 
 .card img {
   width: 100%;
   border-radius: 8px;
-  height: 200px;
+  height: 170px;
+
 }
 .card .title {
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
 }
+.card-title {
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden !important; /* Hide overflowed text */
+  text-overflow: ellipsis !important; /* Add ellipsis when text overflows */
+  width: 160px !important; /* Adjust the width of the text container */
+}
+
 .card .description {
   margin-top: 5px;
   font-size: 14px;
   color: #b3b3b3;
-}
-.player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #181818;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.player .info {
-  display: flex;
-  align-items: center;
-}
-.player .info img {
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-.player .info .details {
-  display: flex;
-  flex-direction: column;
-}
-.player .info .details .song {
-  font-size: 14px;
-  font-weight: bold;
-}
-.player .info .details .artist {
-  font-size: 12px;
-  color: #b3b3b3;
-}
-.player .controls {
-  display: flex;
-  align-items: center;
-}
-.player .controls i {
-  font-size: 20px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-.player .controls i:hover {
-  color: #1db954;
-}
-.player .progress {
-  display: flex;
-  align-items: center;
-}
-.player .progress .time {
-  font-size: 12px;
-  color: #b3b3b3;
-  margin: 0 10px;
-}
-.player .progress .bar {
-  width: 300px;
-  height: 4px;
-  background-color: #333;
-  border-radius: 2px;
-  position: relative;
-}
-.player .progress .bar .filled {
-  width: 20%;
-  height: 100%;
-  background-color: #1db954;
-  border-radius: 2px;
-}
-.right-sidebar {
-  width: 240px; 
-  height: 100vh;
-  background-color: #181818;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 20px;
-}
-.right-sidebar .album-cover {
-  width: 100%;
-  border-radius: 8px;
-}
-.right-sidebar .album-info {
-  margin-top: 20px;
-}
-.right-sidebar .album-info .title {
-  font-size: 18px;
-  font-weight: bold;
-}
-.right-sidebar .album-info .artist {
-  font-size: 14px;
-  color: #b3b3b3;
-}
-.right-sidebar .about {
-  margin-top: 20px;
-}
-.right-sidebar .about img {
-  width: 100%;
-  border-radius: 8px;
 }
 
 @media(max-width:768px)
@@ -230,11 +111,11 @@ body {
     background-color: #181818;
     border-radius: 8px;
     padding: 20px;
+    height: 250px;
     width: 170px;
     margin-right: 20px;
     display: inline-block;
     vertical-align: top;
-    height: 310px;
   }
   .card img {
     width: 100%;
@@ -242,11 +123,11 @@ body {
     height: 60%;
   }
   h1{
-    font-size: 18px;
+    font-size: 17px;
   }
   h2
   {
-    font-size: 17px;
+    font-size: 15px;
   }
   button{
     font-size: 14px;
@@ -388,8 +269,8 @@ html {
    border-radius: 50%;
    /* border: 2px solid black; */
    position: absolute;
-   top: 191px;
-   right: 10px;
+   top: 160px;
+   right: 4px;
    transition: 1s;
    display: flex; 
    transform: translate(-50%, -50%) scale(0); 
@@ -491,7 +372,13 @@ html {
   width: 100%;
   border: 2px solid red;
 }
-video{
+.btn-success{
+  width: 70px;
+  font-size: 10px;
+  height: 30px;
   margin: 0;
-  border-radius: 12px !important;
+  padding: 0;
+}
+.artist-h1{
+  margin: 20px;
 }
