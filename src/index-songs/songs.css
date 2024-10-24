@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  .container {
+    padding: 20px;
+  }
+
+  .content {
+    display: flex;
+    padding: 20px;
+  }
+  .content img {
+    width: 200px;
+    height: 200px;
+  }
+  .content .details {
+    margin-left: 20px;
+  }
+  .details h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  .details p {
+    margin: 5px 0;
+  }
+  .details .play-button {
+    background-color: #1db954;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .details .more-options {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .tracklist {
+    margin-top: 20px;
+  }
+  .tracklist table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .tracklist th,
+  .tracklist td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .tracklist th {
+    text-align: left;
+  }
+  .more-by-artist {
+    margin-top: 20px;
+  }
+  .more-by-artist h3 {
+    margin: 0 0 10px 0;
+  }
+  .more-by-artist .albums {
+    display: flex;
+    overflow-x: auto;
+  }
+  .more-by-artist .albums img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .current-track {
+    display: flex;
+    align-items: center;
+  }
+  .footer .current-track img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer .current-track .track-info {
+    margin-left: 10px;
+  }
+  .footer .controls {
+    display: flex;
+    align-items: center;
+  }
+  .footer .controls i {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .footer .volume {
+    display: flex;
+    align-items: center;
+  }
+  .footer .volume i {
+    margin-right: 10px;
+  }
