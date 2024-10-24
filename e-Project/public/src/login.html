@@ -1,0 +1,147 @@
+<html>
+ <head>
+  <title>
+   Spotify Login
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 300px;
+        }
+        .container img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            border: 1px solid #333;
+            border-radius: 25px;
+            color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn i {
+            margin-right: 10px;
+        }
+        .btn-google {
+            background-color: #4285F4;
+        }
+        .btn-facebook {
+            background-color: #3b5998;
+        }
+        .btn-apple {
+            background-color: #000;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #121212;
+            color: #fff;
+        }
+        .input-group .password-container {
+            position: relative;
+        }
+        .input-group .password-container i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .login-btn {
+            background-color: #1DB954;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .forgot-password, .signup {
+            display: block;
+            margin: 10px 0;
+            color: #1DB954;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <img alt="Spotify logo" height="50" src="./logo.png" width="50"/>
+   <h1>
+    Log in to Sound Group
+   </h1>
+   <a class="btn btn-google" href="#">
+    <i class="fab fa-google">
+    </i>
+    Continue with Google
+   </a>
+   <a class="btn btn-facebook" href="#">
+    <i class="fab fa-facebook-f">
+    </i>
+    Continue with Facebook
+   </a>
+   <a class="btn btn-apple" href="#">
+    <i class="fab fa-apple">
+    </i>
+    Continue with Apple
+   </a>
+   <div class="input-group">
+    <label for="email">
+     Email or username
+    </label>
+    <input id="email" placeholder="Email or username" type="text"/>
+   </div>
+   <div class="input-group">
+    <label for="password">
+     Password
+    </label>
+    <div class="password-container">
+     <input id="password" placeholder="Password" type="password"/>
+     <i class="fas fa-eye">
+     </i>
+    </div>
+   </div>
+   <button class="login-btn">
+    Log In
+   </button>
+   <a class="forgot-password" href="#">
+    Forgot your password?
+   </a>
+   <a class="signup" href="#">
+    Don't have an account? Sign up for Sound Group
+   </a>
+  </div>
+ </body>
+</html>
