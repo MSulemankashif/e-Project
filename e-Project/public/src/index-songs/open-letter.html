@@ -149,12 +149,13 @@
 
     <div class="container" style="height: 1000px;">
       <div class="content" style="margin-top: 180px;">
-        <img
+        <!-- <img
           alt="Album cover"
           height="200"
           src="/src/open letter.jpg"
           width="200"
-        />
+        /> -->
+        <video src="Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
         <div class="details">
           <p>Single</p>
           <h2>Open Letter</h2>
@@ -244,27 +245,27 @@
     </div>
     <div class="footer">
       <div class="current-track">
-        <img
-          alt="Current track cover"
-          height="50"
-          src="https://storage.googleapis.com/a1aa/image/rADfZzZyJdwjCKDxbqop1IecqLnfxZsrT7rMeoAsckw2eYPdC.jpg"
-          width="50"
-        />
-        <div class="track-info">
-          <p>Long time no see</p>
-          <p>Taimour Baig, Raffey Anwar, AUR</p>
-        </div>
+          <img
+              alt="Current track cover"
+              height="50"
+              src="./open letter.jpg"
+              width="50"
+          />
+          <div class="track-info">
+              <p>Long time no see</p>
+              <p>Taimour Baig, Raffey Anwar, AUR</p>
+          </div>
       </div>
       <div class="controls">
-        <i class="fas fa-step-backward"> </i>
-        <i class="fas fa-play"> </i>
-        <i class="fas fa-step-forward"> </i>
+          <i class="fas fa-step-backward" id="backwardBtn"> </i>
+          <i class="fas fa-play" id="playBtn"> </i>
+          <i class="fas fa-step-forward" id="forwardBtn"> </i>
       </div>
       <div class="volume">
-        <i class="fas fa-volume-up"> </i>
-        <input max="100" min="0" type="range" value="50" />
+          <i class="fas fa-volume-up"> </i>
+          <input id="volumeControl" max="100" min="0" type="range" value="50" />
       </div>
-    </div>
+  </div>
 
 
 <custom-footer></custom-footer>
@@ -273,7 +274,7 @@
     <script src="./component/header.js"></script>
     <script src="/component/footer.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/src/script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
   </body>

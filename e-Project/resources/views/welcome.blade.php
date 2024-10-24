@@ -310,7 +310,7 @@ Your latest listening trends</h1>
 
 <div class="section">
     <h2>To get you started</h2>
-    <a href="./open-letter.html">
+    <a href="./src/index-songs/open-letter.html">
     <div class="card "> 
        <!-- 1st Card Start -->
            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">

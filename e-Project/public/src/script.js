@@ -53,3 +53,37 @@ main()
 //   }
 // });
 // e();
+// Get references to video and control elements
+const videoPlayer = document.getElementById("videoPlayer");
+const playBtn = document.getElementById("playBtn");
+const volumeControl = document.getElementById("volumeControl");
+const backwardBtn = document.getElementById("backwardBtn");
+const forwardBtn = document.getElementById("forwardBtn");
+
+// Play / Pause functionality
+let isPlaying = false;
+playBtn.addEventListener("click", () => {
+    if (isPlaying) {
+        videoPlayer.pause();
+        playBtn.className = "fas fa-play";  // Change icon to play
+    } else {
+        videoPlayer.play();
+        playBtn.className = "fas fa-pause"; // Change icon to pause
+    }
+    isPlaying = !isPlaying;
+});
+
+// Volume control functionality
+volumeControl.addEventListener("input", (e) => {
+    videoPlayer.volume = e.target.value / 100;
+});
+
+// Skip backward 5 seconds
+backwardBtn.addEventListener("click", () => {
+    videoPlayer.currentTime -= 5;
+});
+
+// Skip forward 5 seconds
+forwardBtn.addEventListener("click", () => {
+    videoPlayer.currentTime += 5;
+});
