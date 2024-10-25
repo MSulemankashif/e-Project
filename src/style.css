@@ -107,6 +107,18 @@ body {
 
 @media(max-width:768px)
 {
+  .card .title {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .card-title {
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden !important; /* Hide overflowed text */
+    text-overflow: ellipsis !important; /* Add ellipsis when text overflows */
+    width: 130px !important; /* Adjust the width of the text container */
+  }
+  
   .card {
     background-color: #181818;
     border-radius: 8px;
@@ -382,17 +394,20 @@ html {
   width: 100%;
   border: 2px solid red;
 }
-.btn-success{
+#show-more-btn{
   width: 70px;
   font-size: 10px;
   height: 30px;
   margin: 0;
   padding: 0;
 }
+#show-more-btn:hover{
+  text-decoration: underline;
+}
 .artist-h1{
   margin: 20px;
 }
-/* .second-row{
+.second-row{
   display: none;
   transition: 2s;
-} */
+}
