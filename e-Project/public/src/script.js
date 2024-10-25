@@ -87,3 +87,19 @@ backwardBtn.addEventListener("click", () => {
 forwardBtn.addEventListener("click", () => {
     videoPlayer.currentTime += 5;
 });
+
+
+document.getElementById("show-more-btn").addEventListener("click",function(e){
+  const secondRow = document.querySelector(".second-row");
+  const showMoreBtn = document.getElementById("show-more-btn");
+
+  if (secondRow.style.display ==="none"){
+    secondRow.style.display = "contents";
+    secondRow.style.transition="1s"
+    showMoreBtn.innerText = "Show Less";
+  } else{
+    secondRow.style.display = "none";
+    showMoreBtn.innerText = "Show More";
+  }
+});
+e();

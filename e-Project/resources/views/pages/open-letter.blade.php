@@ -13,12 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="stylesheet" href="./songs.css">
+    <link rel="stylesheet" href="{{ asset('src/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/animation.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/src/index-songs/songs.css') }}" />
+    
     <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -38,18 +39,18 @@
             <nav class="navigation">
               <ul>
                 <li>
-                  <a class="navigation-link" href="./premium.html">Premium</a>
+                  <a class="navigation-link" href="/premium.html">Premium</a>
                 </li>
                 <li>
-                  <a class="navigation-link" href="./Spotify-songs/songs.html"
+                  <a class="navigation-link" href="/Spotify-songs/songs.html"
                     >Songs</a
                   >
                 </li>
                 <li>
-                  <a class="navigation-link" href="./help.html">Help</a>
+                  <a class="navigation-link" href="/help.html">Help</a>
                 </li>
                 <li>
-                  <a class="navigation-link" href="./download.html">Download</a>
+                  <a class="navigation-link" href="/download.html">Download</a>
                 </li>
                 <li class="vertical_separator"></li>
                 <li>
@@ -77,7 +78,7 @@
                   <div id="profileMenu" class="profileMenu">
                     <ul class="">
                       <li class="">
-                        <a class="" href="./Spotify-songs/songs.html"
+                        <a class="" href="/Spotify-songs/songs.html"
                           >Welcome</a
                         >
                       </li>
@@ -110,20 +111,20 @@
           <div id="mySidenav" class="sidenav">
             <ul>
               <li>
-                <a class="sidenav-link" href="./premium.html">Premium</a>
+                <a class="sidenav-link" href="/premium.html">Premium</a>
               </li>
               <li>
-                <a class="sidenav-link" href="./help.html">Help</a>
+                <a class="sidenav-link" href="/help.html">Help</a>
               </li>
               <li>
-                <a class="sidenav-link" href="./download.html">Download</a>
+                <a class="sidenav-link" href="/download.html">Download</a>
               </li>
               <li class="h_separator"></li>
               <li>
                 <a class="sidenav-link light" href="#">Welcome</a>
               </li>
               <li>
-                <a class="sidenav-link light son" href="./index.html">Logout</a>
+                <a class="sidenav-link light son" href="/index.html">Logout</a>
               </li>
             </ul>
             <span class="sidenav-logo">
@@ -155,7 +156,7 @@
           src="/src/open letter.jpg"
           width="200"
         /> -->
-        <video src="Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
+        <video src="/src/index-songs/Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
         <div class="details">
           <p>Single</p>
           <h2>Open Letter</h2>
@@ -181,7 +182,7 @@
               <td>1</td>
               <td>
                 <p>Titliaan</p>
-                <p>Afsana Khan, Harrdy Sandhu, Sargun Mehta</p>
+                <p>Talha Anjum, Harrdy Sandhu, Sargun Mehta</p>
               </td>
               <td></td>
               <td>3:15</td>
@@ -190,8 +191,8 @@
         </table>
       </div>
       <div class="more-by-artist">
-        <h3>More by Afsana Khan</h3>
-        <div class="albums">
+        <h3>More by Talha Anjum</h3>
+        {{-- <div class="albums">
           <img
             alt="Album cover 1"
             height="150"
@@ -240,7 +241,9 @@
             src="https://storage.googleapis.com/a1aa/image/oFgkvVOjwP5AKFNqonrj3dY2MWxweubL8mmPeO8mDLHnH7pTA.jpg"
             width="150"
           />
-        </div>
+        </div> --}}
+
+        
       </div>
     </div>
     <div class="footer">
@@ -248,7 +251,7 @@
           <img
               alt="Current track cover"
               height="50"
-              src="./open letter.jpg"
+              src="/src/index-songs/open letter.jpg"
               width="50"
           />
           <div class="track-info">
@@ -271,10 +274,11 @@
 <custom-footer></custom-footer>
 
     <div id="opacity" class="opacity"></div>
-    <script src="./component/header.js"></script>
-    <script src="/component/footer.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="./script.js"></script>
+    <script src="{{ asset('component/header.js') }}"></script>
+<script src="{{ asset('component/footer.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('/src/index-songs/script.js') }}"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
   </body>

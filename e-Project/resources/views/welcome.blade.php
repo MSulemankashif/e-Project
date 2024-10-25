@@ -7,11 +7,11 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="./src/style.css">
-<link rel="stylesheet" href="./css/main.css" />
-<link rel="stylesheet" href="./css/fonts.css" />
-<link rel="stylesheet" href="./css/animation.css">
-<link rel="stylesheet" href="./css/responsive.css">
+<link rel="stylesheet" href="/src/style.css">
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/fonts.css" />
+<link rel="stylesheet" href="/css/animation.css">
+<link rel="stylesheet" href="/css/responsive.css">
 <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"rel="stylesheet"/>
 <title>Sound Group</title>
@@ -310,7 +310,7 @@ Your latest listening trends</h1>
 
 <div class="section">
     <h2>To get you started</h2>
-    <a href="./src/index-songs/open-letter.html">
+    <a href="{{ url('/open-letter') }}">
     <div class="card "> 
        <!-- 1st Card Start -->
            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
@@ -463,9 +463,8 @@ Your latest listening trends</h1>
    
        <!-- Cards Start -->
        <div class="section">
-           <!-- <button class="btn btn-success" id="show-more-btn">Show More</button> -->
            <h2>
-        Suggested for You
+               Suggested for You
     </h2>
     <div class="card">
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
@@ -477,12 +476,12 @@ Your latest listening trends</h1>
         </div>
         <div class="description card-title">
             Talha Anjum, Umair
-     </div>
+        </div>
     </div>
     <div class="card">
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
-           <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
-         </svg>
+            <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+        </svg>
      <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/Jo tum mery ho.png" width="200"/>
      <div class="title">
          Jo Tum Mery Ho
@@ -497,17 +496,17 @@ Your latest listening trends</h1>
         </svg>
         <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/tu hai kahan.webp" width="200"/>
         <div class="title">
-      Tu Hai Kahan
+            Tu Hai Kahan
     </div>
     <div class="description card-title">
         AUR Ahad-Usama-Rafey
     </div>
 </div>
 <div class="card">
-       <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
-           <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
-        </svg>
-        <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/tauba tauba.png" width="200"/>
+    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+        <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+    </svg>
+    <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/tauba tauba.png" width="200"/>
         <div class="title">
             Tauba Tauba
         </div>
@@ -519,7 +518,7 @@ Your latest listening trends</h1>
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
         </svg>
-       <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/on top 2.png" width="200"/>
+        <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/on top 2.png" width="200"/>
        <div class="title">
            On Top 2 
         </div>
@@ -527,7 +526,8 @@ Your latest listening trends</h1>
             Karan, Aujla 
         </div>
     </div>
-    
+    <!-- <button class="btn btn-success" id="show-more-btn">Show More</button> -->
+    <a  id="show-more-btn" style="color: white; font-size: 16px; cursor: pointer;">Show More</a>
     <span class="second-row">
         <div class="card">
             <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
@@ -622,9 +622,10 @@ Your latest listening trends</h1>
 
 <div id="opacity" class="opacity"></div>
 <!-- <script src="./component/header.js"></script> -->
-<script src="./component/footer.js"></script>
-<script src="./js/main.js"></script>
-<script src="./src/script.js"></script>
+<script src="/component/footer.js"></script>
+<script src="/js/main.js"></script>
+<script src="/src/script.js"></script>
+<script src="/js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
