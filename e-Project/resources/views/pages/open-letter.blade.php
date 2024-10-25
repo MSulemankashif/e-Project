@@ -242,10 +242,63 @@
             width="150"
           />
         </div> --}}
+        <div class="card">   
+          <!-- 2nd Card Start -->
+              <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+                  <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+            </svg>
+              <img alt="Album cover of Atif Aslam Mix" height="200" src="./src/lajawab 2.jpg" width="200"/>
+                  <div class="title">
+                      Lajawab 2
+                  </div>
+                  <div class="description card-title">
+                      Rafey Anwer and Taimoor Baig
+                  </div>
+            </div>     <!-- 2nd Card End -->
+   
+       <div class="card"> 
+          <!-- 3rd Card Start -->
+          <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+              <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+            </svg>
+        <img alt="Album cover of Atif Aslam Mix" height="200" src="./src/millionare.jpg" width="200"/>
+        <div class="title">
+         Millionare
+        </div>
+        <div class="description card-title">
+         Yo Yo Honey Singh, Bhushan Kumar
+        </div>
+       </div>     <!-- 3rd Card End -->
 
-        
-      </div>
+
+       <div class="card">
+        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+            <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+        </svg>
+        <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/kaun talha.png" width="200"/>
+        <div class="title">
+            Kaun Talha
+        </div>
+        <div class="description card-title">
+            Talha Anjum, Umair
+        </div>
     </div>
+    <div class="card">
+        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+            <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+        </svg>
+     <img alt="Album cover of Kaun Talha by Talha Anjum, Umair" height="200" src="./src/Jo tum mery ho.png" width="200"/>
+     <div class="title">
+         Jo Tum Mery Ho
+        </div>
+        <div class="description card-title">
+            Anuv Jain and Angad Bahra
+        </div>
+    </div>
+    </div>
+
+
+  </div>
     <div class="footer">
       <div class="current-track">
           <img
