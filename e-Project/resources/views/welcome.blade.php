@@ -353,10 +353,12 @@ Your latest listening trends</h1>
      </div>
     </div>     <!-- 3rd Card End -->
    </div>
+
+
 <!-- Artists Section -->
-<h1 class="artist-h1">Popular Artists</h1>
-<marquee behavior="alternate" direction="" onmouseover="this.stop()" onmouseout="this.start()">
-   <div class="artists row" style="display: flex; width: 2000px;">
+    <h1 class="artist-h1">Popular Artists</h1>
+        <marquee behavior="alternate" direction="" onmouseover="this.stop()" onmouseout="this.start()">
+    <div class="artists row" style="display: flex; width: 2000px;">
        <div class="card-1 artists" style="margin-right: 20px; width: 200px;" >
          <!-- 1st Card Start -->
               <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
@@ -423,7 +425,6 @@ Your latest listening trends</h1>
          </div>
        </div>   <!-- 6th Card End -->
   
-  
        <div class="card-1 artists" style="margin-right: 20px; width: 200px;"> 
         <!-- 7th Card Start -->
           <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
@@ -435,19 +436,8 @@ Your latest listening trends</h1>
          </div>
        </div>   <!-- 7th Card End -->
   
-       <div class="card-1 artists" style="margin-right: 20px; width: 200px;"> 
-        <!-- 8th Card Start -->
-          <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
-            <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
-          </svg>
-          <img alt="Album cover of Open Letter by Talha Anjum" height="200" src="./src/Artists/Maanu.jpg" width="200"/>
-          <div class="title">
-            Maanu
-         </div>
-       </div>   <!-- 8th Card End -->
-  
        <div class="card-1 artists" style="margin-right: 20px; width: 200px;">
-        <!-- 9th Card Start -->
+        <!-- 8th Card Start -->
           <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
           </svg>
@@ -456,16 +446,14 @@ Your latest listening trends</h1>
               Rahat Fateh Ali Khan
               
             </div>
-        </div>   <!-- 9th Card End -->
+        </div>   <!-- 8th Card End -->
    </marquee>
    <!-- Artists End -->
    
    
        <!-- Cards Start -->
        <div class="section">
-           <h2>
-               Suggested for You
-    </h2>
+           <h2>Suggested for You </h2>
     <div class="card">
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
