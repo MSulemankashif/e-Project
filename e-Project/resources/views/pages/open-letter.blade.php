@@ -150,17 +150,11 @@
 
     <div class="container" >
       <div class="content" style="margin-top: 180px;">
-        <!-- <img
-          alt="Album cover"
-          height="200"
-          src="/src/open letter.jpg"
-          width="200"
-        /> -->
         <video src="/src/index-songs/Open letter/Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
         <div class="details">
           <h2>Open Letter</h2>
           <p>Talha Anjum • 2020 • 1 song, 3 min 15 sec</p>
-          <button class="play-button">▶</button>
+          <button class="play-button" id="headerPlayBtn" >▶</button>
       </div>
       </div>
       <div class="tracklist">
@@ -229,7 +223,7 @@
             Talha Anjum, Umair
         </div>
     </div>
-    {{-- 3rd Card End --}}
+    {{--3rd Card End --}}
     
     <div class="card">
       {{-- 4th Card start --}}
@@ -262,10 +256,10 @@
           </div>
       </div>
       <div class="controls">
-          <i class="fas fa-step-backward" id="backwardBtn"> </i>
-          <i class="fas fa-play" id="playBtn"> </i>
-          <i class="fas fa-step-forward" id="forwardBtn"> </i>
-      </div>
+        <i class="fas fa-step-backward" id="backwardBtn"></i>
+        <i class="fas fa-play" id="playPauseBtn"></i> 
+        <i class="fas fa-step-forward" id="forwardBtn"></i>
+    </div>
       <div class="volume">
           <i class="fas fa-volume-up"> </i>
           <input id="volumeControl" max="100" min="0" type="range" value="50" />
