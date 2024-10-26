@@ -87,3 +87,18 @@ backwardBtn.addEventListener("click", () => {
 forwardBtn.addEventListener("click", () => {
     videoPlayer.currentTime += 5;
 });
+
+const mainPlayButton = document.querySelector(".details .play-button");
+
+// Add an event listener for the green play button
+let isPlayingMain = false;
+mainPlayButton.addEventListener("click", () => {
+    if (isPlayingMain) {
+        videoPlayer.pause();
+        mainPlayButton.innerHTML = "▶"; // Icon for play
+    } else {
+        videoPlayer.play();
+        mainPlayButton.innerHTML = '⏸'; // Icon for pause
+    }
+    isPlayingMain = !isPlayingMain;
+});

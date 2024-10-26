@@ -23,7 +23,7 @@
     <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <title>Title</title>
+    <title>Open Letter</title>
   </head>
   <body>
     <custom-header>
@@ -148,7 +148,7 @@
     </custom-header>
     <!--Header-->
 
-    <div class="container" style="height: 1000px;">
+    <div class="container" >
       <div class="content" style="margin-top: 180px;">
         <!-- <img
           alt="Album cover"
@@ -158,14 +158,10 @@
         /> -->
         <video src="/src/index-songs/Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
         <div class="details">
-          <p>Single</p>
           <h2>Open Letter</h2>
           <p>Talha Anjum • 2020 • 1 song, 3 min 15 sec</p>
-          <button class="play-button">
-            <i class="fas fa-play"></i>
-          </button>
-          <i class="fas fa-ellipsis-h more-options"></i>
-        </div>
+          <button class="play-button">▶</button>
+      </div>
       </div>
       <div class="tracklist">
         <table>
