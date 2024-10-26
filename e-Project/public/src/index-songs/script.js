@@ -1,18 +1,3 @@
-// document.getElementById("homeIcon").addEventListener("click", function(e) {
-//     e.preventDefault(); 
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-// }); // For scroll
-
-// const searchIcon = document.querySelector('.fas.fa-search');
-// const searchBar = document.querySelector('.search-bar input');
-
-// searchIcon.addEventListener('click', () => {
-//   searchBar.focus();
-// });
-
 async function getSongs(){
   let a = await fetch("http://127.0.0.1:5500/src/songs/")
   let response = await a.text();
@@ -90,7 +75,6 @@ forwardBtn.addEventListener("click", () => {
 
 const mainPlayButton = document.querySelector(".details .play-button");
 
-// Add an event listener for the green play button
 let isPlayingMain = false;
 mainPlayButton.addEventListener("click", () => {
     if (isPlayingMain) {
@@ -101,4 +85,66 @@ mainPlayButton.addEventListener("click", () => {
         mainPlayButton.innerHTML = '⏸'; // Icon for pause
     }
     isPlayingMain = !isPlayingMain;
+});
+
+
+// Add this in your script section
+document.addEventListener('DOMContentLoaded', function() {
+  const mainVideoPlayer = document.getElementById('videoPlayer');
+  const songCards = document.querySelectorAll('.card');
+  
+  songCards.forEach(card => {
+      card.addEventListener('click', function() {
+          // Update main video player with the clicked song's video
+          mainVideoPlayer.src = this.getAttribute('data-video-src');
+          mainVideoPlayer.load(); // Reload the video
+          mainVideoPlayer.play(); // Auto play the new video
+          
+          // Update the song details below the video
+          document.querySelector('.details h2').textContent = this.querySelector('.title').textContent;
+          document.querySelector('.details p').textContent = this.querySelector('.description').textContent + ' • 2020 • 1 song';
+          
+          // Update the footer player info
+          document.querySelector('.track-info p:first-child').textContent = this.querySelector('.title').textContent;
+          document.querySelector('.track-info p:last-child').textContent = this.querySelector('.description').textContent;
+      });
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const footerImage = document.getElementById('footerImage');
+  const footerTitle = document.getElementById('footerTitle');
+  const footerArtist = document.getElementById('footerArtist');
+  
+  // Get all cards
+  const cards = document.querySelectorAll('.card');
+  
+  // Add click event listener to each card
+  cards.forEach(card => {
+      card.addEventListener('click', function() {
+          // Get data from card's data attributes
+          const songImg = this.dataset.songImg;
+          const songTitle = this.dataset.songTitle;
+          const songArtist = this.dataset.songArtist;
+          
+          // Update footer content
+          footerImage.src = songImg;
+          footerTitle.textContent = songTitle;
+          footerArtist.textContent = songArtist;
+          
+          // Add animation
+          footerImage.style.animation = 'fadeIn 0.3s';
+          
+          // Remove animation after it completes
+          setTimeout(() => {
+              footerImage.style.animation = '';
+          }, 300);
+
+          // Optional: Add active state to clicked card
+          cards.forEach(c => c.classList.remove('active-card'));
+          this.classList.add('active-card');
+      });
+  });
 });

@@ -188,72 +188,22 @@
       </div>
       <div class="more-by-artist">
         <h3>More by Talha Anjum</h3>
-        {{-- <div class="albums">
-          <img
-            alt="Album cover 1"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/Jxe7mA4n4yQMeUCNbYovUFafwwyXIJpS4eHwlTa5XzEOeYPdC.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 2"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/iGI4eO3X5dQ1e0p6CybfUckG7MMFmOozSSw5LUQ6HUgVP2TnA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 3"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/KYi1cMOK6M66FtwoMP38B3IzYonYZ432BinqnV13mvk7xe0JA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 4"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/8YWA9MtpN4LuEl62EtgEleOpNh6woQWnh6uZ31BdC2q4j90JA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 5"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/DnK9R0UIKhrpJVicfBqqT2c5agWVyUaqD6FWYBvqWSVyj90JA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 6"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/pWzs7Hu0ea0IKqz9tG6QgeHftGtJo461HMgvQs2xvNgXP2TnA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 7"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/KXubwD0eMo1lGiefkImTxevLhJCJmHKr0BExLvfoJGCEexe0JA.jpg"
-            width="150"
-          />
-          <img
-            alt="Album cover 8"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/oFgkvVOjwP5AKFNqonrj3dY2MWxweubL8mmPeO8mDLHnH7pTA.jpg"
-            width="150"
-          />
-        </div> --}}
-        <div class="card">   
+        <div class="card" data-video-src="{{ asset('/src/index-songs/lajawab-2/Lajawab-2.mp4') }}" data-song-img="/src/lajawab-2/Lajawab 2.jpg" data-song-title="Lajawab 2" data-song-artist="Rafey Anwer and Taimoor Baig">   
+          {{-- First card start --}}
+          <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+              <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+          </svg>
+          <img alt="Album cover of Atif Aslam Mix" height="200" src="./src/lajawab 2.jpg" width="200"/>
+          <div class="title">
+              Lajawab 2
+          </div>
+          <div class="description card-title">
+              Rafey Anwer and Taimoor Baig
+          </div>
+      </div> 
+      {{-- First card end  --}}
+       <div class="card" data-video-src="{{asset('src/index-songs/Millionare/Millionare.mp4')}}" data-song-img="./src/millionare.jpg" data-song-title="Millionare" data-song-artist="Yo Yo Honey Singh, Bhushan Kumar"> 
           <!-- 2nd Card Start -->
-              <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
-                  <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
-            </svg>
-              <img alt="Album cover of Atif Aslam Mix" height="200" src="./src/lajawab 2.jpg" width="200"/>
-                  <div class="title">
-                      Lajawab 2
-                  </div>
-                  <div class="description card-title">
-                      Rafey Anwer and Taimoor Baig
-                  </div>
-            </div>     <!-- 2nd Card End -->
-   
-       <div class="card"> 
-          <!-- 3rd Card Start -->
           <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
               <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
             </svg>
@@ -264,9 +214,9 @@
         <div class="description card-title">
          Yo Yo Honey Singh, Bhushan Kumar
         </div>
-       </div>     <!-- 3rd Card End -->
+       </div>     <!-- 2nd Card End -->
 
-
+       {{-- 3rd Card start --}}
        <div class="card">
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
@@ -279,7 +229,10 @@
             Talha Anjum, Umair
         </div>
     </div>
+    {{-- 3rd Card End --}}
+    
     <div class="card">
+      {{-- 4th Card start --}}
         <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
         </svg>
@@ -292,7 +245,7 @@
         </div>
     </div>
     </div>
-
+{{-- 4th card end  --}}
 
   </div>
     <div class="footer">
