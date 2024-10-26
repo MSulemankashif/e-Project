@@ -156,7 +156,7 @@
           src="/src/open letter.jpg"
           width="200"
         /> -->
-        <video src="/src/index-songs/Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
+        <video src="/src/index-songs/Open letter/Open-letter-video.mp4" height="250px" width="250px" id="videoPlayer" ></video>
         <div class="details">
           <h2>Open Letter</h2>
           <p>Talha Anjum • 2020 • 1 song, 3 min 15 sec</p>
@@ -300,7 +300,7 @@
           <img
               alt="Current track cover"
               height="50"
-              src="/src/index-songs/open letter.jpg"
+              src="/src/index-songs/Open letter/open letter.jpg"
               width="50"
           />
           <div class="track-info">
