@@ -273,10 +273,9 @@
     </div>
 </div>
 
-<!-- <div id="last_listen" class="last_listen">
+{{-- <div id="last_listen" class="last_listen">
     <div class="container">
-        <h1>
-Your latest listening trends</h1>
+        <h1>Your latest listening trends</h1>
         <div class="ll_row">
             <span >
                 <div class="ll_card">
@@ -306,7 +305,7 @@ Your latest listening trends</h1>
             </span>
         </div>
     </div>
-</div> -->
+</div>  --}}
 
 <div class="section">
     <h2>To get you started</h2>
