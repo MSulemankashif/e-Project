@@ -310,19 +310,25 @@
 <div class="section">
     <h2>To get you started</h2>
     <a href="{{ url('/open-letter') }}">
-    <div class="card "> 
-       <!-- 1st Card Start -->
-           <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
-             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
-           </svg>
-     <img alt="Album cover of Open Letter by Talha Anjum" height="200" src="./src/open letter.jpg" width="200"/>
-     <div class="title">
-      Open Letter
-     </div>
-     <div class="description card-title">
-      Faisal Kapadia, aleemrk and Talhah Anjum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, adipisci facere et officia ullam iste blanditiis id ad reprehenderit dolores, corrupti quas in cum doloribus! Qui eveniet optio quidem ipsa.
-     </div>
-    </div>   <!-- 1st Card End -->
+        <div class="card">
+            <form action="{{ url('/pages/process-card') }}" method="POST">
+                <input type="hidden" name="videoSource" value="path/to/open_letter_video.mp4">
+                <input type="hidden" name="title" value="Open Letter">
+                <input type="hidden" name="description" value="Faisal Kapadia, aleemrk and Talhah Anjum">
+                <input type="hidden" name="thumbnail" value="./src/open letter.jpg">
+                
+                <button type="submit" style="border: none; background: none; width: 100%; cursor: pointer;">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
+                        <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
+                    </svg>
+                    <img alt="Album cover" height="200" src="./src/open letter.jpg" width="200"/>
+                    <div class="title" style="color: white" >Open Letter</div>
+                    <div class="description card-title">
+                        Faisal Kapadia, aleemrk and Talhah Anjum
+                    </div>
+                </button>
+            </form>
+        </div>
 </a>
     <div class="card">   
        <!-- 2nd Card Start -->

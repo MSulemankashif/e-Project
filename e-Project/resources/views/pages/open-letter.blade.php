@@ -1,3 +1,9 @@
+@php
+    $cardData = session('card_data');
+    // Clear the session data after retrieving it
+    session()->forget('card_data');
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
