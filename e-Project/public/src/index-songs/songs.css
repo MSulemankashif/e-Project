@@ -107,3 +107,15 @@ body {
   .footer .volume i {
     margin-right: 10px;
   }
+  .seekbar-container{
+    margin-top: 17px;
+  }
+  #seekbar{
+    width: 360px;
+  }
+  .controls{
+    margin-left: 159px;
+  }
+  .video{
+    visibility: hidden;
+  }

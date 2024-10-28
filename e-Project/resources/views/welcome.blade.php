@@ -580,29 +580,6 @@
    </div>
    
 
-<!-- <div class="home_links">
-    <div class="container">
-        <h1 class="title-1">Get the most from Spotify</h1>
-    </div>
-    <div class="container links">
-        <div class="account_link">
-            <h3 class="subtitle-1">Manage your account</h3>
-            <p class="parag-1">Edit your profile, change your password and update your payment informations.</p>
-            <a class="a_link" href="">MANAGE ACCOUNT</a>
-        </div>
-        <div class="app_link">
-            <h3 class="subtitle-1">Get our free app</h3>
-            <p class="parag-1">Listen to your favorite music without any problems. Download the Spotify app to your computer.</p>
-            <a class="a_link" href="">DOWNLOAD DESKTOP APP</a>
-        </div>
-        <div class="web_link">
-            <h3 class="subtitle-1">Listen on the web</h3>
-            <p class="parag-1">To play and share music inside the browser without the app <a class="a_link" href="">play.spotify.com</a> Go to.</p>
-            <a class="a_link" href="https://spotify-clone-oguz3.web.app/">play music</a>
-        </div>
-    </div>
-</div> -->
-
 <!--Footer-->
 <custom-footer></custom-footer>
 <!--Footer-->
