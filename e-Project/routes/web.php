@@ -12,10 +12,4 @@ Route::get('/open-letter', function () {
 });
 
 Route::post('/pages/process-card', 'CardController@process')->name('process.card');
-
-Route::get('/open-letter', function () {
-    if (!session('card_data')) {
-        return redirect('/');
-    }
-    return view('pages.open-letter');
-})->name('open.letter');
+Route::get('/open-letter', 'SomeController@showOpenLetter')->name('open.letter');
