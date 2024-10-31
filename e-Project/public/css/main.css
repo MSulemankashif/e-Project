@@ -136,9 +136,9 @@ header {
     width: 12px;
     height: 12px;
 }
-.profile_btn:hover .profile-title span{
+/* .profile_btn:hover .profile-title span{
     color: var(--hvrgreen);
-}
+} */
 .profile_btn:hover .usericon{
     border-color: var(--hvrgreen);
 }

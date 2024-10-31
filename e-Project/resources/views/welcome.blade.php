@@ -64,21 +64,21 @@
                                     </svg>
                                 </div>  --}}
                                 <div class="profile-title">
-                                    <span>Login</span> 
-                                    <span>SignUp</span> 
+                                    <a href="/login"><span id="login">Login/SignUp</span></a> 
+                                    {{-- <span id="signup">SignUp</span>  --}}
                                     {{-- <svg viewBox="0 0 1024 1024">
                                         <path d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"></path>
                                     </svg> --}}
                                 </div>
                             </button>
-                            <div id="profileMenu" class="profileMenu">
+                            {{-- <div id="profileMenu" class="profileMenu">
                                 <ul class="">
                                     <li class="">
                                         <a class="" href="./Spotify-songs/songs.html">Welcome</a> 
                                     </li>
                             
                                 </ul>
-                            </div>
+                            </div> --}}
                         </li>
                     </ul>
                 </nav>

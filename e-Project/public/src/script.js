@@ -39,20 +39,20 @@ async function main (){
 }
 main()
 
-// document.getElementById("show-more-btn").addEventListener("click",function(e){
-//   const secondRow = document.querySelector(".second-row");
-//   const showMoreBtn = document.getElementById("show-more-btn");
+document.getElementById("show-more-btn").addEventListener("click",function(e){
+  const secondRow = document.querySelector(".second-row");
+  const showMoreBtn = document.getElementById("show-more-btn");
 
-//   if (secondRow.style.display ==="none"){
-//     secondRow.style.display = "flex";
-//     secondRow.style.transition="1s"
-//     showMoreBtn.innerText = "Show Less";
-//   } else{
-//     secondRow.style.display = "none";
-//     showMoreBtn.innerText = "Show More";
-//   }
-// });
-// e();
+  if (secondRow.style.display ==="none"){
+    secondRow.style.display = "flex";
+    secondRow.style.transition="1s"
+    showMoreBtn.innerText = "Show Less";
+  } else{
+    secondRow.style.display = "none";
+    showMoreBtn.innerText = "Show More";
+  }
+});
+e();
 // Get references to video and control elements
 const videoPlayer = document.getElementById("videoPlayer");
 const playBtn = document.getElementById("playBtn");
