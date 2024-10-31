@@ -57,17 +57,18 @@
                         <li class="vertical_separator"></li>
                         <li>
                             <button class="profile_btn" type="button" onclick="profile()">
-                                <div class="usericon">
+                                {{-- <div class="usericon">
                                     <svg viewBox="0 0 1024 1024" aria-labelledby="mh-usericon-title">
                                         <title id="mh-usericon-title">Profil</title>
                                         <path d="M730.06 679.64q-45.377 53.444-101.84 83.443t-120 29.999q-64.032 0-120.75-30.503t-102.6-84.451q-40.335 13.109-77.645 29.747t-53.948 26.722l-17.142 10.084Q106.388 763.84 84.96 802.41t-21.428 73.107 25.461 59.242 60.754 24.705h716.95q35.293 0 60.754-24.705t25.461-59.242-21.428-72.603-51.679-57.225q-6.554-4.033-18.907-10.84t-51.427-24.453-79.409-30.755zm-221.84 25.72q-34.285 0-67.561-14.873t-60.754-40.335-51.175-60.502-40.083-75.124-25.461-84.451-9.075-87.728q0-64.032 19.915-116.22t54.452-85.964 80.67-51.931 99.072-18.151 99.072 18.151 80.67 51.931 54.452 85.964 19.915 116.22q0 65.04-20.167 130.58t-53.948 116.72-81.426 83.443-98.568 32.268z"></path>
                                     </svg>
-                                </div> 
+                                </div>  --}}
                                 <div class="profile-title">
-                                    <span>Profile</span> 
-                                    <svg viewBox="0 0 1024 1024">
+                                    <span>Login</span> 
+                                    <span>SignUp</span> 
+                                    {{-- <svg viewBox="0 0 1024 1024">
                                         <path d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"></path>
-                                    </svg>
+                                    </svg> --}}
                                 </div>
                             </button>
                             <div id="profileMenu" class="profileMenu">
@@ -311,23 +312,14 @@
     <h2>To get you started</h2>
     <a href="{{ url('/open-letter') }}">
         <div class="card">
-            <form action="{{ url('/pages/process-card') }}" method="POST">
-                <input type="hidden" name="videoSource" value="path/to/open_letter_video.mp4">
-                <input type="hidden" name="title" value="Open Letter">
-                <input type="hidden" name="description" value="Faisal Kapadia, aleemrk and Talhah Anjum">
-                <input type="hidden" name="thumbnail" value="./src/open letter.jpg">
-                
-                <button type="submit" style="border: none; background: none; width: 100%; cursor: pointer;">
                     <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE play" width="24" height="24">
                         <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="black"></path>
                     </svg>
                     <img alt="Album cover" height="200" src="./src/open letter.jpg" width="200"/>
-                    <div class="title" style="color: white" >Open Letter</div>
+                    <div class="title">Open Letter</div>
                     <div class="description card-title">
                         Faisal Kapadia, aleemrk and Talhah Anjum
                     </div>
-                </button>
-            </form>
         </div>
 </a>
     <div class="card">   

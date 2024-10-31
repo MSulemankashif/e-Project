@@ -82,13 +82,13 @@
                     </div>
                   </button>
                   <div id="profileMenu" class="profileMenu">
-                    <ul class="">
+                    {{-- <ul class="">
                       <li class="">
                         <a class="" href="/Spotify-songs/songs.html"
                           >Welcome</a
                         >
                       </li>
-                    </ul>
+                    </ul> --}}
                   </div>
                 </li>
               </ul>
