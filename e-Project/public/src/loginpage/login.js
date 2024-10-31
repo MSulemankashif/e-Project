@@ -10,19 +10,30 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-let passwordMessage = document.querySelector(".pass");  // Changed variable name
+let passwordMessage = document.querySelector(".pass");  
 let first = document.querySelector('.first');
 let second = document.querySelector(".second");
+let btn =  document.querySelector('.button');
+let min = document.querySelector("#min");
 
-function checkPassword() {  // Changed function name
-    if(second.value === first.value )  // Added .value to compare input values
+let combine = first + second;
+
+btn.addEventListener('click',()=>{
+    if(combine.length<16)
+    {
+        min.style.display="flex";
+    } else{
+        min.style.display="none";
+    }
+})
+
+btn.addEventListener('click',()=>{
+    if(second.value === first.value )  
     {   
         passwordMessage.style.display = "none";
     } else {
         passwordMessage.style.display="flex";
+        btn.type="button";
     } 
-}
+})
 
-// Add event listeners to inputs
-first.addEventListener('input', checkPassword);
-second.addEventListener('input', checkPassword);

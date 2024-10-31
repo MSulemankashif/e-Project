@@ -206,7 +206,12 @@ body {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
-
 .pass{
+    display: none;
+}
+#min{
+    color: red;
+    font-size: 10px;
+    margin: 0 0;
     display: none;
 }

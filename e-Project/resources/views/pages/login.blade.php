@@ -39,11 +39,12 @@
                 {{-- <span>or use your email password</span> --}}
                 <input type="text" placeholder="Enter your name" required>
                 <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Password" class="first" required>
-                <input type="text" placeholder="Re-Password" class="second" required>
+                <input type="text" placeholder="Password" class="first" required min="8">
+                <p id="min">Password must be 8 Characters Long</p>
+                <input type="text" placeholder="Re-Password" class="second" required minlength="8">
                 <p style="color: red" class="pass">Password Mismatch!</p>
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button class="button">Sign In</button>
             </form>
         </div>
         <div class="toggle-container">
@@ -51,7 +52,7 @@
                 <div class="toggle-panel toggle-left">
                     <h1>Welcome Back!</h1>
                     <p style="color: white;">Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="login" type="submit">Sign In</button>
+                    <button class="hidden" id="login" >Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>SOUND, GROUP!</h1>
